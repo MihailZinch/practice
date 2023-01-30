@@ -44,6 +44,7 @@ const DefaultHomeWrapper = styled.div``;
 const SecondHomeWrapper = styled.div`
   h1 {
     color: green;
+    font-size: 50px;
   }
 `;
 const SimpleHomeWrapper = styled.div`
