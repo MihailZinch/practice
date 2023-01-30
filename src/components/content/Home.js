@@ -7,12 +7,13 @@ const Home = ({
   theme = 'first'
 }) => {
   const themeMap = {
-    first: DefaultHomeWrapper,
+    first: SecondHomeWrapper,
     second: DefaultHomeWrapper,
     third: DefaultHomeWrapper
   };
 
   const HomeWrapper = themeMap[theme];
+  
 
   return (
     <HomeWrapper>
@@ -40,7 +41,11 @@ const Home = ({
 };
 
 const DefaultHomeWrapper = styled.div``;
-
+const SecondHomeWrapper = styled.div`
+  h1 {
+    color: green;
+  }
+`;
 const SimpleHomeWrapper = styled.div`
   h1 {
     color: red;
